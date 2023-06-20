@@ -1,0 +1,49 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Comforter&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <style>
+            .italic{
+                font-family: "Comforter", cursive;
+            }
+            .heading{
+                font-family: 'Tilt Prism', cursive;
+            }
+            :root{
+                font-family: 'Poppins', sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="bg-white h-[15vh] flex py-6">
+            <img
+                src="https://docs.astro.build/assets/full-logo-light.png"
+                class="h-12 mx-5 bg-orange-500 p-2 rounded-xl px-4"
+            />
+            <div class="md:mx-auto heading float-right text-orange-500 text-4xl font-bold ml-36">
+                Blog Site
+            </div>
+            <div
+                class="bg-orange-500 text-white px-10 mx-6 rounded-xl cursor-pointer hover:bg-white hover:text-orange-500 border border-orange-500 hidden md:flex"
+            >
+                <button> Sign In</button>
+            </div>
+        </nav>
+        <slot />
+    </body>
+</html>
